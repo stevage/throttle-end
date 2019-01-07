@@ -1,0 +1,14 @@
+{
+  "name": "throttle-end",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Steve Bennett <me@stevebennett.me> (http://stevebennett.me)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
