@@ -10,4 +10,16 @@ Yet another throttle/debounce function. This one has these properties, where f()
 It's useful in a situation like a user dragging a pin on a map where there is an expensive network request to make. You want the request to happen every 200ms or so,
 you're happy for some of those calls to never happen, and when they stop dragging, you want to be able to immediately fire off the last request.
 
+### Usage:
+
+```js
+const throttle = require('throttle-end');
+const myfuncThrottled = throttle(myfunc, 500);
+
+thing.on('drag', myfuncThrottled);
+
+thing.on('dragend', myfuncThrottled.flush);
+```
+
+### Credits
 Created by Steve Bennett (Github user: @stevage).
