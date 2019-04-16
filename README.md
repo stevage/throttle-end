@@ -14,7 +14,7 @@ you're happy for some of those calls to never happen, and when they stop draggin
 
 ```js
 const throttle = require('throttle-end');
-const myfuncThrottled = throttle(myfunc, 500);
+const myfuncThrottled = throttle(myfunc, 500 /*, thisArg */);
 
 thing.on('drag', myfuncThrottled);
 
